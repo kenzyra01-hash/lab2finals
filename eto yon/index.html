@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Record Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="app-header">
+        <h1>Class Record Manager</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="card" id="display-section">
+            <h2>Student List</h2>
+            <ol id="student-list"></ol>
+            <p class="info">Total students:<strong id="list-length"></strong></p>
+        </section>
+
+        <section class="card" id="add-section">
+            <h2>Add Student <span class="method"></span></h2>
+            <div class="form-row">
+                <input type="text" id="add-input" placeholder="Enter student name">
+                <button type="button" id="add-btn">Add</button>
+            </div>
+        </section>
+
+        <section class="card" id="remove-section">
+            <h2>Remove Last Student <span class="method"></span></h2>
+                <button type="button" id="remove-btn">Remove Last</button>
+            </div>
+            <p class="message" id="remove-message"></p>
+        </section>
+
+        <section class="card" id="find-section">
+            <h2>Find Student<span class="method"></span></h2>
+            <div class="form-row">
+                <input type="number" id="find-input" placeholder="Enter index number">
+                <button type="button" id="find-btn">Find</button>
+            </div>
+            <p class="message" id="find-result"></p>
+        </section>
+
+        <section class="card" id="join-section">
+            <h2>Join Students <span class="method"></span></h2>
+            <div class="form-row">
+                <input type="text" id="separator-input" placeholder="Separator (e.g. , or | )" value=" | ">
+                <button type="button" id="join-btn">Join</button>
+            </div>
+            <p class="message" id="join-result"></p>
+        </section>
+        <section class="card" id="tostring-section">
+            <h2>Convert to String <span class="method"></span></h2>
+                <button type="button" id="tostring-btn">Convert to String</button>
+            </div>
+            <p class="message" id="tostring-result"></p>
+        </section>
+
+    </main>
+
+    <footer class="app-footer">
+        <p>Group 10</p>
+        <p>Morante,K.Z|Nanez,M.S.|Singcol,R.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
